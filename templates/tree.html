@@ -1,0 +1,17 @@
+<div>
+	<table class="table table-hover">
+        <tr>
+            <th><h3 style="color:#5340A4;">Name of the Tree</h3></th>
+            <th><h3 style="color:#5340A4;">Latin Name</h3></th>       
+        </tr>
+
+        <tr>
+            <td><h3>{{ mytree.name | uppercase}}</h3></td>
+            <td><h3>{{ mytree.latinName | uppercase}}</h3></td>
+        </tr>  
+        <tr>
+            
+            <td><img ng-src= '{{ mytree.pict }}'  class="img-rounded"></td>
+        </tr> 
+      </table>
+</div>

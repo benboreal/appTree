@@ -1,0 +1,17 @@
+<div>
+	<table class="table table-hover">
+        <tr>
+            <th><h3 style="color:#5340A4;">firstname</h3></th>
+            <th><h3 style="color:#5340A4;">lastname</h3></th>       
+        </tr>
+
+        <tr>
+            <td><h3>{{ myuser.firstName | uppercase}}</h3></td>
+            <td><h3>{{ myuser.lastName | uppercase}}</h3></td>
+        </tr>  
+        <tr>
+            
+            <td><img ng-src= '{{ myuser.userPict}}'  class="img-rounded"></td>
+        </tr> 
+      </table>
+</div>
