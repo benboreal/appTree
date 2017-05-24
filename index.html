@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>tree of world</title>
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    
+    <script src="js/newCtrl"></script>
+    <script src="js/usersFactory.js"></script>
+    <script src="js/usersController.js"></script>
+    <script src="js/usersDirective.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+	 <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+	<script src="js/registerCtrl.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<head>
+<h1 id="rtow">REGISTER in WORLD of TREES</h1>
+</head>
+<body ng-app="app" id="ins">
+  <div ng-controller="usersController">
+
+<!--<form class="form-inline" id="fm">
+        <fieldset>             
+             <label for="firstName"><h2>FIRSTNAME:</h2></label>
+             <input id="firstName" type="text" ng-model="newUser.firstName" class="form-control"></br>
+             <label for="lastName"><h2>LASTNAME:</h2></label>
+             <input id="lastName" type="text" ng-model="newUser.lastName" class="form-control"></br>
+             <label for="age"><h2>AGE:</h2></label>
+             <input id="age" type="int" ng-model="newUser.age" class="form-control"></br>
+            
+             <button id="but3" type="submit"  class="btn btn-success" ng-click="addUser(newUser)">JOIN US</button></br></br></br>-->
+
+	<form class="form-inline" id="fm"  method="post" action="upload.php" enctype="multipart/form-data">
+            <label for="firstName"><h2>FIRSTNAME:</h2></label>
+            <input id="firstName" name="firstName" type="text" ng-model="newUser.firstName" class="form-control"></br>
+            <label for="lastName"><h2>LASTNAME:</h2></label>
+            <input id="lastName" name="lastName" type="text" ng-model="newUser.lastName" class="form-control"></br>
+
+            <label for="age"><h2>AGE:</h2></label>
+            <input id="age" name="age" type="text" ng-model="newUser.age" class="form-control"></br>
+
+            <label for="icone"><h2>PICTURE :</h2></label><br/>
+            <input type="file" name="icone" id="icone" class="form-control"/><br />
+            <input type="submit" name="submit" value="Envoyer" id="but4"/><!-- ng-click="addUser(newUser)" class="btn-btn-succes" id=""-->
+        </form>
+        
+                            
+        <a href="herbium.html" class="hidden" id="but2"><p>WELCOME</p></a>
+    
+    </br></br></br>
+    <div  class="col-md-6">
+      <div ng-repeat="user in users | filter:letter | orderBy : 'firstName'">
+     <div>
+      <user myuser="user"/>
+     </div>
+   </div>
+</body>
+</html>
