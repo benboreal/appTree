@@ -1,0 +1,136 @@
+/*herbium.html_______________________________________*/
+#name 
+{
+	margin-left: 27.5%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;	
+}
+#latinName 
+{
+	margin-left: 18%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;	
+}
+#pict
+{
+	margin-left: 21.5%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;	
+}
+#search
+{
+	margin-left: 26%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;	
+}
+#but
+{
+	margin-left:43.5%; 
+	width:200px;
+	background-color:#2CF145;
+	border-color: black;
+	opacity:0.8;
+	color:black;
+}
+#tow
+{
+	color:white;
+	margin-left:47%;
+}
+label
+{
+	color:white;
+}
+body
+{
+	background-image:url(http://www.woodsurfer.com/wp-content/uploads/2013/06/4830_Sengager-pour-une-foret-de-production-moderne-et-responsable.jpg); 
+	/*background-color: #17A200;*/
+}
+h3
+{
+	color:#2CF145;
+	background-color: white;
+	opacity:0.8;
+}
+h1
+{
+	margin-left: 27%;
+}
+
+/*index.html__________________________________________________________________________________________________*/
+#rtow
+{
+	color:white;
+}
+#ins
+{
+	background-image:url(http://www.woodsurfer.com/wp-content/uploads/2013/06/4830_Sengager-pour-une-foret-de-production-moderne-et-responsable.jpg);
+/*background-color: #17A200;*/
+}
+#fm
+{
+	margin-left: 30%;
+}
+#age
+{
+	margin-left: 8.7%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;
+}
+#lastName
+{
+	margin-left: 1%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;
+}
+#firstName
+{
+	margin-left: 0.4%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;
+}
+#icone
+{
+	margin-left: 14%;
+	opacity:0.8;
+	background-color:#91CCF9;
+	color:white;
+
+}
+fieldset
+{
+	margin-top: 15%;
+}
+#but2
+{
+	margin-left: 21%;
+	width:200px;
+	background-color: green;
+	border-color: green;
+	color:white;
+	opacity:0.8;
+}
+p
+{
+	margin-left: 27%;
+}
+
+#but4
+{
+	margin-top: 20px;
+	margin-left: 14%;
+	width:180px;
+	height: 25px;
+	background-color: green;
+	border-color: green;
+	color:white;
+	opacity:0.8;
+}
+
