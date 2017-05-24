@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  <title>trees of world</title>
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/treesFactory.js"></script>
+    <script src="js/mainController.js"></script>
+    <script src="js/treesDirective.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+ </head>
+ <header>
+  <h1 id="tow">TREES</h1>
+</header>
+
+  <body ng-app="app">
+  
+    <div ng-controller="mainController">
+     <div class="row">
+     <div class="col-md-6">
+      <form class="form-inline">
+        <fieldset>
+          <label for="name"><h2>NAME:</h2></label>
+          <input id="name" type="text" ng-model="newTree.name" class="form-control"></br>
+          <label for="latinName"><h2>LatinName:</h2></label>
+          <input id="latinName" type="text" ng-model="newTree.latinName" class="form-control"></br>
+          <label for="pict"><h2>Image url:</h2></label>
+          <input  id ="pict" type="text" ng-model="newTree.pict" class="form-control"></br></br></br>
+          <button id="but" type="submit" ng-click="addTree(newTree)" class="btn btn-success">ADD TREE</button>
+          </br></br></br></br>        
+          <label><h2>Search:</h2></label>
+          <input  id ="search" ng-model="letter" class="form-control">       
+        </fieldset>       
+      </form>
+     </div>
+     <div  class="col-md-6">
+      <div ng-repeat="tree in trees | filter:letter | orderBy : 'name'">
+     <div>
+      <tree mytree="tree"/>
+     </div>
+   </div>     
+         <hr>
+        </div>
+       </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
